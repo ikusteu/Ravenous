@@ -1,12 +1,6 @@
 import React from 'react';
 import './searchBar.css';
 
-const sortByOptions = {
-    'Best Match': 'best_match',
-    'Highest Rated': 'rating',
-    'Most Reviewed': 'review_count'
-};
-
 class SearchBar extends React.Component {
     constructor(props) {
         super(props);
@@ -76,7 +70,7 @@ class SearchBar extends React.Component {
                     <input key="location" value={this.state.location} onChange={this.handleLocationChange} placeholder="Where?"/>
                 </div>
                 <div className="SearchBar-submit">
-                    <a onClick={this.handleSearch}>Let's Go</a>
+                    <a href="/" onClick={this.handleSearch}>Let's Go</a>
                 </div>
             </div>
         );
